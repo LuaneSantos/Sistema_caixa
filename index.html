@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema caixa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <center>
+<form action="script.php" method="post">
+    <label for="nome_cliente">Nome do Cliente:</label><br>
+    <input type="text" id="nome_cliente" name="nome_cliente" required><br><br>
+ 
+    <label for="primeiro_produto">Primeiro Produto:</label><br>
+    <input type="text" id="primeiro_produto" name="primeiro_produto" required><br><br>
+ 
+    <label for="valor_primeiro_produto">Valor Produto:</label><br>
+    <input type="number" id="valor_primeiro_produto" name="valor_primeiro_produto" min="0" step="0.01" required><br><br>
+ 
+    <label for="segundo_produto">Segundo Produto:</label><br>
+    <input type="text" id="segundo_produto" name="segundo_produto"><br><br>
+ 
+    <label for="valor_segundo_produto">Valor Produto:</label><br>
+    <input type="number" id="valor_segundo_produto" name="valor_segundo_produto" min="0" step="0.01"><br><br>
+ 
+    <label for="valor_pago">Valor Pago:</label><br>
+    <input type="number" id="valor_pago" name="valor_pago" min="0" step="0.01" required><br><br>
+ 
+    <input type="submit" value="Gerar Nota Fiscal">
+</form>
+ </center>
+
+</body>
+</html>
